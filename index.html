@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DMIT Test Mumbai | Unlock Your True Genius | Nikhil A. Jadhav</title>
+    
+    <meta name="description" content="Stop guessing. Expert DMIT testing in Mumbai, Navi Mumbai & Thane since 2012. Discover learning styles, 8 intelligences & career paths. Call 8779381955.">
+    <meta name="keywords" content="DMIT test Mumbai, DMIT test Thane, learning style test, multiple intelligence test, career counseling Mumbai">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #1e3a8a; 
+            --primary-light: #3b82f6;
+            --accent: #f59e0b; 
+            --accent-hover: #d97706;
+            --whatsapp: #25D366;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-soft: #f9fafb;
+            --white: #ffffff;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Plus Jakarta Sans', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { line-height: 1.6; color: var(--text-dark); background-color: var(--white); padding-bottom: 80px; }
+
+        h1, h2, h3 { color: var(--primary); line-height: 1.2; }
+        h1 { font-size: 3.2rem; font-weight: 800; letter-spacing: -1px; margin-bottom: 20px; }
+        h2 { font-size: 2.2rem; font-weight: 800; text-align: center; margin-bottom: 20px; }
+        h3 { font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; }
+        p { color: var(--text-light); font-size: 1.05rem; margin-bottom: 15px; }
+
+        /* Navigation */
+        header { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); box-shadow: var(--shadow-sm); position: sticky; top: 0; z-index: 1000; padding: 12px 20px; }
+        .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo img { height: 55px; }
+        .nav-links { display: flex; gap: 25px; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-dark); font-weight: 600; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--primary-light); }
+
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 28px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 1rem; transition: all 0.3s ease; border: none; cursor: pointer; text-align: center; }
+        .btn-primary { background-color: var(--accent); color: var(--white); box-shadow: 0 4px 15px rgba(245, 158, 11, 0.35); }
+        .btn-primary:hover { background-color: var(--accent-hover); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(245, 158, 11, 0.45); }
+        .btn-whatsapp { background-color: var(--whatsapp); color: var(--white); box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3); }
+        .btn-whatsapp:hover { background-color: #128C7E; transform: translateY(-2px); }
+        .btn-large { padding: 16px 32px; font-size: 1.1rem; width: 100%; }
+
+        /* NEW SPLIT HERO SECTION */
+        .hero { background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); padding: 80px 20px; }
+        .hero-container { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; }
+        
+        /* Larger Trust Badge */
+        .hero-badge { display: inline-flex; align-items: center; gap: 15px; background: var(--white); padding: 12px 25px 12px 12px; border-radius: 50px; box-shadow: var(--shadow-md); margin-bottom: 30px; border: 1px solid #e5e7eb; }
+        .hero-badge img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-light); }
+        .hero-badge-text { text-align: left; }
+        .hero-badge-name { font-weight: 800; font-size: 1.1rem; color: var(--primary); line-height: 1.2; margin-bottom: 3px; }
+        .hero-badge-title { font-size: 0.85rem; color: var(--text-dark); font-weight: 600; }
+        .hero-badge-cred { font-size: 0.75rem; color: var(--text-light); font-weight: 500; margin-top: 2px; }
+
+        .hero-sub { font-size: 1.2rem; margin-bottom: 35px; color: #4b5563; font-weight: 500; }
+        .hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; }
+        
+        /* Hero Image */
+        .hero-image-wrapper { position: relative; }
+        .hero-image-wrapper img { width: 100%; border-radius: 30px; box-shadow: var(--shadow-xl); object-fit: cover; }
+        
+        /* Floating Accents */
+        .floating-badge-1 { position: absolute; top: -20px; right: -20px; background: var(--white); padding: 15px 25px; border-radius: 20px; box-shadow: var(--shadow-lg); font-weight: 800; color: var(--primary); font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        .floating-badge-1 i { color: #10b981; }
+
+        /* Container */
+        .container { max-width: 1100px; margin: 0 auto; padding: 80px 20px; }
+        .bg-soft { background-color: var(--bg-soft); }
+
+        /* Pain Points Cards */
+        .pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 40px; }
+        .pain-card { background: var(--white); padding: 30px; border-radius: 20px; box-shadow: var(--shadow-md); transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #f3f4f6; }
+        .pain-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-xl); }
+        .pain-icon-wrapper { width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 20px; }
+        .pain-card:nth-child(1) .pain-icon-wrapper { background: #fee2e2; color: #ef4444; }
+        .pain-card:nth-child(2) .pain-icon-wrapper { background: #dbeafe; color: #3b82f6; }
+        .pain-card:nth-child(3) .pain-icon-wrapper { background: #fef3c7; color: #f59e0b; }
+        .pain-card:nth-child(4) .pain-icon-wrapper { background: #ede9fe; color: #8b5cf6; }
+        .pain-card:nth-child(5) .pain-icon-wrapper { background: #d1fae5; color: #10b981; }
+        .pain-card:nth-child(6) .pain-icon-wrapper { background: #ffedd5; color: #f97316; }
+
+        /* Curiosity Section */
+        .quotient-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; margin: 30px 0; }
+        .quotient-badge { background: var(--white); padding: 12px 25px; border-radius: 50px; font-weight: 700; color: var(--primary); box-shadow: var(--shadow-sm); font-size: 1rem; border: 1px solid #e5e7eb; display: flex; align-items: center; gap: 8px; }
+        
+        /* Image Split */
+        .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .split-grid img { width: 100%; border-radius: 20px; box-shadow: var(--shadow-lg); }
+        .split-content h2 { text-align: left; }
+
+        /* About Section */
+        .about-grid { display: grid; grid-template-columns: 250px 1fr; gap: 40px; align-items: center; }
+        .about-img-container { text-align: center; }
+        .about-img-container img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; border: 5px solid var(--white); box-shadow: var(--shadow-lg); }
+        .about-name { font-size: 1.3rem; font-weight: 800; color: var(--primary); margin-top: 15px; }
+        .about-title { font-size: 0.9rem; color: var(--accent); font-weight: 700; text-transform: uppercase; }
+
+        /* Comparison */
+        .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 40px; }
+        .compare-card { background: var(--white); padding: 40px; border-radius: 20px; box-shadow: var(--shadow-md); border-top: 6px solid #e5e7eb; }
+        .compare-card.highlight { border-top-color: var(--accent); box-shadow: var(--shadow-xl); }
+        .compare-card h3 { text-align: center; margin-bottom: 25px; font-size: 1.5rem; }
+        .compare-list { list-style: none; }
+        .compare-list li { margin-bottom: 15px; padding-left: 30px; position: relative; font-size: 1rem; color: var(--text-dark); }
+        .compare-list li i { position: absolute; left: 0; top: 4px; }
+        .compare-card.iq i { color: #ef4444; }
+        .compare-card.highlight i { color: #10b981; }
+
+        /* CTA Banner */
+        .cta-banner { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: var(--white); text-align: center; padding: 70px 20px; }
+        .cta-banner h2 { color: var(--white); }
+        .cta-banner p { color: #dbeafe; }
+        .phone-large { font-size: 2.5rem; font-weight: 800; color: var(--accent); text-decoration: none; display: block; margin: 15px 0 30px; letter-spacing: 1px; }
+
+        /* Footer */
+        footer { background: #111827; color: #9ca3af; padding: 60px 20px 100px; text-align: center; font-size: 0.9rem; }
+        .footer-links { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-bottom: 25px; }
+        .footer-links a { color: #d1d5db; text-decoration: none; transition: color 0.3s; }
+        .footer-links a:hover { color: var(--accent); }
+
+        /* Mobile Sticky Bar */
+        .mobile-sticky { display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: var(--white); box-shadow: 0 -4px 10px rgba(0,0,0,0.1); z-index: 2000; padding: 12px; gap: 10px; }
+        .mobile-sticky .btn { flex: 1; padding: 12px; font-size: 1rem; }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero-container { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+            .hero-badge { display: inline-flex; text-align: left; }
+            .hero-buttons { justify-content: center; }
+            h1 { font-size: 2.6rem; }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.8rem; }
+            .split-grid, .compare-grid, .about-grid { grid-template-columns: 1fr; text-align: center; }
+            .split-content h2 { text-align: center; }
+            .nav-links { display: none; }
+            .mobile-sticky { display: flex; }
+            .phone-large { font-size: 2rem; }
+            .about-img-container img { width: 150px; height: 150px; }
+            .floating-badge-1 { padding: 10px 15px; font-size: 1rem; top: -10px; right: -10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="images/logo.webp" alt="DMIT Expert Logo">
+            </div>
+            <div class="nav-links">
+                <a href="#about">About Expert</a>
+                <a href="#pain-points">Challenges</a>
+                <a href="#curiosity">Beyond IQ</a>
+                <a href="#what-is-dmit">What is DMIT?</a>
+                <a href="tel:8779381955" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;"><i class="fas fa-phone-alt"></i> 8779381955</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- NEW SPLIT HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <!-- Left Side: Text & Hook -->
+            <div class="hero-content">
+                <!-- Bigger Trust Badge with expanded credentials -->
+                <div class="hero-badge">
+                    <img src="images/pro.webp" alt="Nikhil A. Jadhav">
+                    <div class="hero-badge-text">
+                        <div class="hero-badge-name">Nikhil A. Jadhav</div>
+                        <div class="hero-badge-title">DMIT Expert Since 2012</div>
+                        <div class="hero-badge-cred">Trusted by Schools, Govt Officials & Business Tycoons</div>
+                    </div>
+                </div>
+
+                <h1>Your Child's Report Card Doesn't Show Their True Genius.</h1>
+                <p class="hero-sub">Stop forcing them to study harder. DMIT reveals exactly <strong>HOW</strong> their brain is wired to learn, so you can unlock their natural brilliance—in one lifetime-valid test.</p>
+                
+                <div class="hero-buttons">
+                    <a href="tel:8779381955" class="btn btn-primary btn-large"><i class="fas fa-phone-alt"></i> Claim Your DMIT Report</a>
+                    <a href="https://wa.me/918779381955?text=Hi%20Nikhil,%20I%20want%20to%20know%20more%20about%20DMIT." target="_blank" class="btn btn-whatsapp btn-large"><i class="fab fa-whatsapp"></i> Chat with Expert Nikhil</a>
+                </div>
+            </div>
+
+            <!-- Right Side: Image of Kids (2.webp) -->
+            <div class="hero-image-wrapper">
+                <img src="images/2.webp" alt="DMIT for Families and Students">
+                <div class="floating-badge-1">
+                    <i class="fas fa-check-circle"></i> 100% Scientific
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points / Challenges Section -->
+    <section id="pain-points" class="bg-soft">
+        <div class="container">
+            <h2>Does Any of This Sound Familiar?</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto;">Every child is unique. But traditional education treats them all the same. DMIT uncovers the real reasons behind these struggles.</p>
+            
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon-wrapper"><i class="fas fa-book-reader"></i></div>
+                    <h3>Studies for hours, still forgets?</h3>
+                    <p>Your child isn't lazy. They're using the wrong learning style. DMIT reveals if they're a visual, auditory, or kinesthetic learner.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon-wrapper"><i class="fas fa-brain"></i></div>
+                    <h3>Confused about which stream to pick?</h3>
+                    <p>Science, Commerce, or Arts? Stop guessing. DMIT maps their innate cognitive strengths to the right career path.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon-wrapper"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Lacks focus and concentration?</h3>
+                    <p>It's not about discipline. It's about brain wiring. DMIT identifies the dominant brain lobe and suggests targeted exercises.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon-wrapper"><i class="fas fa-users"></i></div>
+                    <h3>Behavioral challenges at home?</h3>
+                    <p>Understanding their 8 Multiple Intelligences helps you parent with empathy, not frustration.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon-wrapper"><i class="fas fa-frown"></i></div>
+                    <h3>Low confidence and high stress?</h3>
+                    <p>When children know their natural strengths, they stop comparing themselves to others and start excelling in their own way.</p>
+                </div>
+                <div class="pain-card">
+                    <div class="pain-icon-wrapper"><i class="fas fa-briefcase"></i></div>
+                    <h3>Stuck in the wrong career?</h3>
+                    <p>Adults can use DMIT too. Discover your true calling and finally find professional fulfillment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosity Section -->
+    <section id="curiosity">
+        <div class="container">
+            <h2>Did You Know? Success Isn't Just About IQ.</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 30px;">Schools only measure IQ. But life rewards a combination of quotients. DMIT reveals where your true strength lies.</p>
+            
+            <div class="quotient-grid">
+                <div class="quotient-badge"><i class="fas fa-lightbulb" style="color: #f59e0b;"></i> IQ (Intelligence)</div>
+                <div class="quotient-badge"><i class="fas fa-heart" style="color: #ef4444;"></i> EQ (Emotional)</div>
+                <div class="quotient-badge"><i class="fas fa-globe" style="color: #3b82f6;"></i> CQ (Cultural)</div>
+                <div class="quotient-badge"><i class="fas fa-shield-alt" style="color: #10b981;"></i> AQ (Adversity)</div>
+                <div class="quotient-badge"><i class="fas fa-spa" style="color: #8b5cf6;"></i> SQ (Spiritual)</div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 50px;">Discover Your 8 Multiple Intelligences</h3>
+            <p style="text-align: center; margin-bottom: 20px;">Every person has 8 intelligences. DMIT shows you which ones dominate in you.</p>
+            <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; font-weight: 600; color: var(--primary);">
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Linguistic</span>
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Logical-Mathematical</span>
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Musical</span>
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Bodily-Kinesthetic</span>
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Spatial</span>
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Interpersonal</span>
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Intrapersonal</span>
+                <span style="background: #eff6ff; padding: 8px 15px; border-radius: 8px;">Naturalist</span>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://wa.me/918779381955?text=Hi%20Nikhil,%20I%20want%20to%20discover%20my%20intelligences." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Discover Yours Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is DMIT -->
+    <section id="what-is-dmit" class="bg-soft">
+        <div class="container">
+            <div class="split-grid">
+                <div class="split-content">
+                    <h2>What is DMIT?</h2>
+                    <p><strong>DMIT (Dermatoglyphics Multiple Intelligence Test)</strong> is a scientific assessment based on fingerprint patterns. These patterns are formed in the womb and are directly linked to your brain's neural development.</p>
+                    <p>By analyzing your fingerprints, we can map your 8 Multiple Intelligences, learning style, personality type, and innate potential—giving you a 30+ page report that's valid for a lifetime.</p>
+                    <p>It's non-invasive, painless, and completely safe for all ages.</p>
+                    <br>
+                    <a href="tel:8779381955" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call to Book: 8779381955</a>
+                </div>
+                <div>
+                    <img src="images/1.webp" alt="DMIT Brain Analysis">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Expert -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-img-container">
+                    <img src="images/pro.webp" alt="Nikhil A. Jadhav - DMIT Expert">
+                    <div class="about-name">Nikhil A. Jadhav</div>
+                    <div class="about-title">DMIT Expert Since 2012</div>
+                </div>
+                <div>
+                    <h2 style="text-align: left; margin-bottom: 15px;">Trusted Expertise You Can Rely On</h2>
+                    <p>Since 2012, I have helped thousands of families, students, and professionals discover their true genetic potential through DMIT.</p>
+                    <ul style="list-style: none; padding: 0; margin-bottom: 20px;">
+                        <li style="margin-bottom: 10px; font-weight: 600; color: var(--primary);"><i class="fas fa-check-circle" style="color: #10b981; margin-right: 10px;"></i> Conducted tests in numerous schools.</li>
+                        <li style="margin-bottom: 10px; font-weight: 600; color: var(--primary);"><i class="fas fa-check-circle" style="color: #10b981; margin-right: 10px;"></i> Trusted by top business tycoons and entrepreneurs.</li>
+                        <li style="margin-bottom: 10px; font-weight: 600; color: var(--primary);"><i class="fas fa-check-circle" style="color: #10b981; margin-right: 10px;"></i> Confidential testing for high-ranking Government Officials.</li>
+                    </ul>
+                    <a href="tel:8779381955" class="btn btn-primary"><i class="fas fa-phone-alt"></i> To Know More, Call: 8779381955</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="bg-soft">
+        <div class="container">
+            <h2>Why DMIT is Different from a Traditional IQ Test</h2>
+            <div class="compare-grid">
+                <div class="compare-card iq">
+                    <h3>Traditional IQ Test</h3>
+                    <ul class="compare-list">
+                        <li><i class="fas fa-times-circle"></i> <strong>Manually conducted:</strong> Relies on answering objective questions.</li>
+                        <li><i class="fas fa-times-circle"></i> <strong>Affected by mood & health:</strong> A bad day can result in a poor score.</li>
+                        <li><i class="fas fa-times-circle"></i> <strong>Stressful:</strong> Test anxiety can hide true potential.</li>
+                    </ul>
+                </div>
+                <div class="compare-card highlight">
+                    <h3>DMIT Test</h3>
+                    <ul class="compare-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Scientifically based:</strong> Analyzes fingerprint patterns linked to brain development.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Unaffected by mood:</strong> Results don't depend on how you feel on test day.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Lifetime validity:</strong> Your fingerprints never change, so results are permanent.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container" style="padding: 0;">
+            <h2>Ready to Discover Your True Potential?</h2>
+            <p style="color: #dbeafe; font-size: 1.1rem; max-width: 600px; margin: 0 auto;">Speak directly with Nikhil A. Jadhav. No bots, no sales pitch—just honest guidance about what DMIT can reveal for you or your child.</p>
+            <a href="tel:8779381955" class="phone-large">📞 8779381955</a>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href="tel:8779381955" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+                <a href="https://wa.me/918779381955" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="padding: 0;">
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#what-is-dmit">What is DMIT?</a>
+                <a href="#" onclick="alert('Privacy Policy:\n\nWe respect your privacy. All data collected during the DMIT process (fingerprints and personal details) is kept strictly confidential and is used solely for generating your DMIT report. We do not sell or share your data with third parties.'); return false;">Privacy Policy</a>
+                <a href="#" onclick="alert('Terms & Conditions:\n\n1. The DMIT test is a scientific assessment tool and not a medical diagnostic test.\n2. Results are based on fingerprint patterns and are valid for a lifetime.\n3. Fees paid for the test and consultation are non-refundable.\n4. The report provided is for guidance and counseling purposes only.'); return false;">Terms & Conditions</a>
+                <a href="#" onclick="alert('Disclaimer:\n\nThis website is not affiliated with Google or Facebook. The information provided here is for educational purposes. DMIT does not diagnose, treat, or cure any medical or psychological condition. Consultation with a certified expert is advised before making major life decisions based on the report.'); return false;">Disclaimer</a>
+            </div>
+            <p>&copy; 2024 DMIT Expert - Nikhil A. Jadhav. All Rights Reserved.</p>
+            <p>Serving Mumbai, Navi Mumbai, and Thane.</p>
+            <p>Contact: <a href="tel:8779381955" style="color: var(--accent); text-decoration: none;">8779381955</a></p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Bar -->
+    <div class="mobile-sticky">
+        <a href="tel:8779381955" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
+        <a href="https://wa.me/918779381955" target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+</body>
+</html>
